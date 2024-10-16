@@ -11,10 +11,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// BACKEND ROUTE
-Route::get('dashboard/index', [DashboardController::class, 'index'])->name('dashboard.index')->middleware(AuthenticateMiddleware::class);
+// BACKEND ROUTERS
+Route::get('dashboard/index', [DashboardController::class, 'index'])->name('dashboard.index')->middleware('admin');
 
-// USER
+// USEr
 Route::get('user/index', [UserController::class, 'index'])->name('user.index')->middleware('admin');
 
 Route::get('login', [AuthController::class, 'login'])->name('auth.login')->middleware('checklogin');

@@ -16,6 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
             // 'auth' => Illuminate\Auth\Middleware\Authenticate::class,
             'checklogin' => \App\Http\Middleware\LoginMiddleware::class,
             'admin' => \App\Http\Middleware\AuthenticateMiddleware::class,
+            // 'admin' => \App\Http\Middleware\AuthenticateMiddleware::class,
             // 'auth.basic' => Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
             // 'auth.session' => Illuminate\Session\Middleware\AuthenticateSession::class,
             // 'cache.headers' => Illuminate\Http\Middleware\SetCacheHeaders::class,

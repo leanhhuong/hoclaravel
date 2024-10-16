@@ -11,14 +11,7 @@ class DashboardController extends Controller
 
     public function index()
     {
-        $config = $this->config();
-        $template = 'backend.dashboard.home.index';
-        return view('backend.dashboard.index', compact('template', 'config'));
-    }
-
-    private function config()
-    {
-        return [
+        $config = [
             'js' => [
                 'backend/js/plugins/flot/jquery.flot.js',
                 'backend/js/plugins/flot/jquery.flot.tooltip.min.js',
@@ -38,5 +31,7 @@ class DashboardController extends Controller
                 'backend/js/demo/sparkline-demo.js',
             ]
         ];
+        $template = 'backend.dashboard.home.index';
+        return view('backend.dashboard.layout', compact('template', 'config'));
     }
 }

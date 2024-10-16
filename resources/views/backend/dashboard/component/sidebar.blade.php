@@ -21,11 +21,10 @@
                         </div>
                     </li>
                     <li class="active">
-                        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Quản lý thành viên</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="{{ route('user.index') }}"></a>Quản lý thành viên</li>
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Thành viên</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="{{ route('user.index') }}">Quản lý thành viên</a></li>
                         </ul>
                     </li>
-
             </div>
         </nav>
