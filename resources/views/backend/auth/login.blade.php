@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
 
-    <title>INSPINIA | Login 2</title>
+    <title>Hoc Laravel</title>
 
 </head>
 
